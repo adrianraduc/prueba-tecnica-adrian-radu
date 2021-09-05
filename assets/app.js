@@ -10,3 +10,19 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import DashboardComponent from './components/DashboardComponent/DashboardComponent.jsx';
+
+class App extends Component {
+    render() {
+        return (
+            <DashboardComponent>
+                
+            </DashboardComponent>
+        );
+    }
+}
+
+ReactDOM.render(<App/>, document.getElementById("root"))
